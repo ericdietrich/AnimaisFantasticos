@@ -11,7 +11,7 @@ export default function initAnimacaoScroll() {
                 if (isSectionVisibble) {
                     section.classList.add('ativo');
                 }
-                else {
+                else if (section.classList.contains('ativo')) {
                     section.classList.remove('ativo');
                 }
             });
